@@ -1,0 +1,30 @@
+{
+  "name": "todoapp",
+  "description": "Simple TodoApp",
+  "main": "app.js",
+  "authors": [
+    "Aditya"
+  ],
+  "license": "ISC",
+  "moduleType": [
+    "amd"
+  ],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.5",
+    "angular-route": "^1.5.5",
+    "angular-ui-router": "ui-route#^0.2.18",
+    "bootstrap": "^3.3.6",
+    "angular-resource": "^1.5.5",
+    "font-awesome": "^4.6.2",
+    "angular-mocks": "^1.5.5"
+  }
+}

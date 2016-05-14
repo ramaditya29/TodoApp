@@ -1,0 +1,15 @@
+<h1>Tasks</h1>
+<table class="table table-bordered table-striped  table-hover">
+	<tr>
+		<th ng-repeat="t in title">
+		
+			{{t}}
+		</th>
+	</tr>
+	<tr ng-repeat="task in tasks">
+		<td>{{task._id}}</td>
+		<td>{{task.task}}</td>
+		<td>{{task.date}}</td>
+		<td><a ui-sref="edit({ id: task._id })" class="btn btn-primary">Edit</a>      <button type="button" class="btn btn-danger" ng-click="deleteTodo(task._id)">Delete</button></td>
+	</tr>
+</table>

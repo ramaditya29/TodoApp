@@ -1,0 +1,16 @@
+<ion-view view-title="TodoList">
+	<ion-nav-buttons side="primary">
+		<button class="ion-compose" ng-click="new()"></button>
+	</ion-nav-buttons>
+	<ion-content>
+	   
+	    <ion-list>
+	      <ion-item ng-repeat="list in todoList" href="#/edit/{{list._id}}">
+	        <h2>{{list.task}}</h2>
+	        <p>{{list.description}}</p>
+	        <ion-option-button class="button-assertive icon-left ion-trash-b" ng-click="remove(list._id)">Delete</ion-option-button>
+	      </ion-item>
+
+	    </ion-list>
+	</ion-content>
+</ion-view>

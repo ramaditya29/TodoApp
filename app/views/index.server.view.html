@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+	<head>
+		<title>{{ title }}</title>
+		<meta charset="utf-8">
+  		<meta name="viewport" content="width=device-width, initial-scale=1">
+  		{% for cssFile in cssFiles %}
+  		<link rel="stylesheet" href="{{cssFile}}"></script>
+  		{% endfor%}
+	</head>
+	<body ng-app="TodoApp">
+		<div class="container">
+			<br/>
+	        <div class="row" ng-controller="mainCtrl">
+	            <div class="col-sm-12" ng-include='"src/views/nav.view.tpl.html"'></div>
+	        </div>
+	        <div class="row">
+	            <div class="col-sm-12" ui-view></div>
+	        </div>
+		</div>
+		{% for jsFile in jsFiles %}
+	    <script src="{{jsFile}}"></script>
+	    {% endfor%}
+	</body>
+</html>

@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mochawesome Report Card</title>
+    
+    <link rel="stylesheet" href="css/mochawesome.css">
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="report-info-cnt">
+          <h1 class="report-title">todoapp</h1>
+          <h3 class="report-date">Friday, May 13 2016, 03:11am</h3>
+        </div>
+        <div class="quick-summary-cnt">
+            <ul class="list-unstyled quick-summary">
+              <li class="qs-item summary-duration" title="Duration">1.777<span>S</span></li>
+              <li class="qs-item summary-suites" title="Suites">2</li>
+              <li class="qs-item summary-tests" title="Tests">6</li>
+              <li class="qs-item summary-passes" title="Passed" data-filter="passed">6</li>
+              <li class="qs-item summary-failures" title="Failed" data-filter="failed">0</li>
+              <li class="qs-item summary-pending" title="Pending" data-filter="pending">0</li>
+            </ul>        </div>
+      </div>
+    </div>
+
+    <!-- Report Summary -->
+    <div class="summary">
+      <div class="container">
+          <div class="row">
+            <div class="summary-col summary-duration">
+              <h1 class="summary-count">1.777<span>S</span></h1>
+              <h4 class="summary-label">S</h4>
+            </div>
+            <div class="summary-col summary-suites" title="Suites">
+              <h1 class="summary-count">2</h1>
+              <h4 class="summary-label">Suites</h4>
+            </div>
+            <div class="summary-col summary-tests" title="Tests">
+              <h1 class="summary-count">6</h1>
+              <h4 class="summary-label">Tests</h4>
+            </div>
+            <div class="summary-col summary-passes" data-filter="passed" title="Passed">
+              <h1 class="summary-count">6</h1>
+              <h4 class="summary-label">Passed</h4>
+            </div>
+            <div class="summary-col summary-failures" data-filter="failed" title="Failed">
+              <h1 class="summary-count">0</h1>
+              <h4 class="summary-label">Failed</h4>
+            </div>
+            <div class="summary-col summary-pending" data-filter="pending" title="Pending">
+              <h1 class="summary-count">0</h1>
+              <h4 class="summary-label">Pending</h4>
+            </div>
+          </div>      </div>
+    </div>
+    <div class="statusbar">
+      <div class="container">
+          <div class="row">
+            <div class="status-item status-item-pending-pct">0% Pending</div>
+            <div class="status-item status-item-passing-pct success">100% Passing</div>
+          </div>      </div>
+    </div>
+
+    <!-- Suites -->
+    <div class="details container">
+            <section class="suite-wrap">
+          <div id="d66a65a2-5c7b-4e55-9c01-57c82a362535" class="suite has-tests has-passed">
+            <h3 class="suite-title">HTML Page</h3>
+            <h5 class="suite-filename">/app/tests/test.js</h5>
+            <!-- Suite Chart -->
+            <div class="suite-chart-wrap">
+              <canvas id="d66a65a2-5c7b-4e55-9c01-57c82a362535" class="suite-chart" width="50" height="50" data-total-passes="1" data-total-failures="0" data-total-pending="0" data-total-skipped="0"></canvas>
+            </div>
+            <div class="suite-data-wrap">
+              <!-- Suite Summary -->
+              <ul class="suite-summary list-unstyled">
+                <li class="suite-summary-item duration">247 ms</li>
+                <li class="suite-summary-item tests">1</li>
+                <li class="suite-summary-item passed">1</li>
+                <li class="suite-summary-item failed">0</li>
+                <li class="suite-summary-item pending">0</li>
+              </ul>
+              <!-- Test Info -->
+              <div class="suite-test-wrap">
+                <div class="suite-test-header" data-toggle="collapse" data-target="#d66a65a2-5c7b-4e55-9c01-57c82a362535-test-list">
+                  <h4 class="suite-test-header-title">Tests</h4>
+                </div>
+                <div id="d66a65a2-5c7b-4e55-9c01-57c82a362535-test-list" class="list-group test-list collapse in">
+                    <div id="166eab20-d912-4c69-884b-6d756bd47587" class="list-group-item test passed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              Checking the Index Page /index
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#166eab20-d912-4c69-884b-6d756bd47587 > .test-code.collapse">Code</button>
+              <span class="test-duration slow">247 ms</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small">request(server)<br>	.get(<span class="hljs-string">'/index'</span>)<br>	.end(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">error, res</span>)</span>{<br>		expect(res).to.have.property(<span class="hljs-string">'status'</span>, <span class="hljs-number">200</span>);<br>		done();<br>	});</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+        </div>        </div>
+              </div>
+            </div>
+        
+        
+          </div>
+        </section>
+            <section class="suite-wrap">
+          <div id="db95a36b-3810-49ed-8d8c-fd86aec19c76" class="suite has-tests has-passed">
+            <h3 class="suite-title">Routes Testing</h3>
+            <h5 class="suite-filename">/app/tests/test.js</h5>
+            <!-- Suite Chart -->
+            <div class="suite-chart-wrap">
+              <canvas id="db95a36b-3810-49ed-8d8c-fd86aec19c76" class="suite-chart" width="50" height="50" data-total-passes="5" data-total-failures="0" data-total-pending="0" data-total-skipped="0"></canvas>
+            </div>
+            <div class="suite-data-wrap">
+              <!-- Suite Summary -->
+              <ul class="suite-summary list-unstyled">
+                <li class="suite-summary-item duration">675 ms</li>
+                <li class="suite-summary-item tests">5</li>
+                <li class="suite-summary-item passed">5</li>
+                <li class="suite-summary-item failed">0</li>
+                <li class="suite-summary-item pending">0</li>
+              </ul>
+              <!-- Test Info -->
+              <div class="suite-test-wrap">
+                <div class="suite-test-header" data-toggle="collapse" data-target="#db95a36b-3810-49ed-8d8c-fd86aec19c76-test-list">
+                  <h4 class="suite-test-header-title">Tests</h4>
+                </div>
+                <div id="db95a36b-3810-49ed-8d8c-fd86aec19c76-test-list" class="list-group test-list collapse in">
+                    <div id="5f0eed9c-3531-4f01-a82d-1c01d20d2c91" class="list-group-item test passed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              Creating the todolist using /api/todo POST
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#5f0eed9c-3531-4f01-a82d-1c01d20d2c91 > .test-code.collapse">Code</button>
+              <span class="test-duration slow">189 ms</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small">request(server)<br>	.post(<span class="hljs-string">'/api/todo'</span>)<br>	.send({work: <span class="hljs-string">"Gulp"</span>, description: <span class="hljs-string">"Gulp Basics"</span>, user: <span class="hljs-string">"Aditya"</span>, date: <span class="hljs-string">"2016-10-23"</span>})<br>	.end(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">error, res</span>)</span>{<br>		expect(res).to.have.property(<span class="hljs-string">'status'</span>,<span class="hljs-number">200</span>);<br>		<span class="hljs-built_in">console</span>.log(res.body);<br>		expect(res.body).to.equal(<span class="hljs-string">"Data inserted"</span>);<br>		done();<br>	});</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+        </div>            <div id="8a48c7a0-ea50-4032-bf01-db9474ca6116" class="list-group-item test passed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              Retrieving the todolist using /api/todo GET
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#8a48c7a0-ea50-4032-bf01-db9474ca6116 > .test-code.collapse">Code</button>
+              <span class="test-duration fast">31 ms</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small">request(server)<br>	.get(<span class="hljs-string">'/api/todo'</span>)<br>	.end(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">error, res</span>)</span>{<br>		expect(res).to.have.property(<span class="hljs-string">'status'</span>,<span class="hljs-number">200</span>);<br>		expect(res).to.be.json;<br>		expect(res.body).to.be.a(<span class="hljs-string">'Array'</span>);<br>		expect(res.body[<span class="hljs-number">0</span>]).to.be.a(<span class="hljs-string">'object'</span>);<br>		expect(res.body[<span class="hljs-number">0</span>]).to.have.property(<span class="hljs-string">'task'</span>);<br>		expect(res.body[<span class="hljs-number">0</span>]).to.have.property(<span class="hljs-string">'description'</span>);<br>		expect(res.body[<span class="hljs-number">0</span>]).to.have.property(<span class="hljs-string">'_id'</span>);<br>		expect(res.body[<span class="hljs-number">0</span>]).to.have.property(<span class="hljs-string">'user'</span>);<br>		expect(res.body[<span class="hljs-number">0</span>]).to.have.property(<span class="hljs-string">'date'</span>);<br>		expect(res.body[<span class="hljs-number">0</span>].task).to.equal(<span class="hljs-string">'Sample'</span>);<br>		<span class="hljs-comment">//console.log(res.body);</span><br>		done();<br>	});</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+        </div>            <div id="7be9b908-d119-430d-9641-1cdd614c10ea" class="list-group-item test passed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              Retrieving the todo based on ID using /api/todo/:id GET
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#7be9b908-d119-430d-9641-1cdd614c10ea > .test-code.collapse">Code</button>
+              <span class="test-duration slow">183 ms</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small">request(server)<br>	.get(<span class="hljs-string">'/api/todo'</span>)<br>	.end(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">error, res</span>)</span>{<br>		request(server)<br>			.get(<span class="hljs-string">'/api/todo/'</span> + res.body[<span class="hljs-number">0</span>]._id)<br>			.end(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">error, res</span>)</span>{<br>				expect(res).to.have.property(<span class="hljs-string">'status'</span>, <span class="hljs-number">200</span>);<br>				<span class="hljs-built_in">console</span>.log(res.body);<br>				expect(res).to.be.json;<br>				expect(res.body).to.be.json;<br>				expect(res.body).to.be.a(<span class="hljs-string">'object'</span>);<br>				expect(res.body).to.have.property(<span class="hljs-string">'task'</span>);<br>				expect(res.body).to.have.property(<span class="hljs-string">'description'</span>);<br>				expect(res.body).to.have.property(<span class="hljs-string">'_id'</span>);<br>				expect(res.body).to.have.property(<span class="hljs-string">'user'</span>);<br>				expect(res.body).to.have.property(<span class="hljs-string">'date'</span>);<br>				expect(res.body.task).to.equal(<span class="hljs-string">'Sample'</span>);<br>				done();<br>			});<br>	});</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+        </div>            <div id="a3f1520f-3a1a-4e5a-9d53-dcb16b7bf8a0" class="list-group-item test passed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              Updating the todo list based on ID using /api/todo/ PUT
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#a3f1520f-3a1a-4e5a-9d53-dcb16b7bf8a0 > .test-code.collapse">Code</button>
+              <span class="test-duration slow">147 ms</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small">request(server)<br>	.get(<span class="hljs-string">'/api/todo'</span>)<br>	.end(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">error, res</span>)</span>{<br>		request(server)<br>			.put(<span class="hljs-string">'/api/todo/'</span>)<br>			.send({_id: res.body[<span class="hljs-number">0</span>]._id ,work: <span class="hljs-string">"Gulp Tutorial"</span>, description: <span class="hljs-string">"Gulp Basics"</span>})<br>			.end(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">error, res</span>)</span>{<br>				expect(res).to.have.property(<span class="hljs-string">'status'</span>, <span class="hljs-number">200</span>);<br>				<span class="hljs-built_in">console</span>.log(res.body);<br>				expect(res).to.be.json;<br>				expect(res.body).to.equal(<span class="hljs-string">"Data Successfully updated"</span>);<br>				done();<br>			});<br>	});</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+        </div>            <div id="a100f7bb-139d-4be9-8ae5-51cfc1725a0e" class="list-group-item test passed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              Delete one todo from todo based on ID using /api/todo/:id DELETE
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#a100f7bb-139d-4be9-8ae5-51cfc1725a0e > .test-code.collapse">Code</button>
+              <span class="test-duration slow">125 ms</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small">request(server)<br>	.get(<span class="hljs-string">'/api/todo'</span>)<br>	.end(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">error, res</span>)</span>{<br>		request(server)<br>			.delete(<span class="hljs-string">'/api/todo/'</span> + res.body[<span class="hljs-number">0</span>]._id)<br>			.end(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">error, resp</span>)</span>{<br>				expect(resp).to.have.property(<span class="hljs-string">'status'</span>, <span class="hljs-number">200</span>);<br>				expect(resp).to.be.json;<br>				expect(resp.body).to.equal(<span class="hljs-string">"Task deleted successfully"</span>);<br>				done();<br>			});<br>	});</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+        </div>        </div>
+              </div>
+            </div>
+        
+        
+          </div>
+        </section>
+    </div>
+
+    <footer>
+      <div class="container">
+        <p>Report generated by <a href="http://adamgruber.github.io/mochawesome/" target="_blank">mochawesome</a>.<br>Designed and built by <a href="https://github.com/adamgruber" target="_blank">adamgruber</a>. &copy;2016.</p>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/vendor.js"></script>
+    <script src="js/mochawesome.js"></script>
+  </body>
+</html>
